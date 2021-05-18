@@ -3,7 +3,9 @@ import ReactDOM from 'react-dom';
 import './App.css';
 import Banner from './Banner';
 import Pets from './Pets';
+import Animals from './Animals';
 
+import 'bootstrap/dist/css/bootstrap.min.css';
 /*
 import M from 'materialize-css';
 */
@@ -17,6 +19,8 @@ function App() {
 <div>
 <Banner />
 <Pets />
+<Animals />
+
 
 </div>  
 

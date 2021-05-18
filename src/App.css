@@ -16,8 +16,14 @@ body {
 
 .banner {
 text-align: center;
-margin-top: 20%;
+padding-top: 5%;
 height: 100vh;
+background-color: rgb(228, 167, 77);
+}
+
+.bannermargin {
+  
+  top: 50%;
 
 }
 
@@ -65,12 +71,12 @@ img {
 
 .whitebg {
 
-  background-color: rgb(197, 236, 236);
+  background-color: rgb(246, 255, 255);
   height: 100vh;
 }
 
 .h1pets {
-
+ display: flex;
   font-family: vollkorn;
 }
 
@@ -84,5 +90,42 @@ float: left;
 
 
 .img {
+  float: right;
  
 }
+
+.ptag {
+clear: both;
+}
+
+#pets {
+padding-top: 10%;
+height: 100vh; 
+}
+
+.animals {
+
+  background-color: rgb(228, 167, 77);
+  color:antiquewhite;
+  padding-top: 5%;
+height: 100vh;
+  }
+
+  .animalsh1 {
+color: antiquewhite;
+
+  }
+
+  .borderimage {
+    margin-left: 5px;
+  position:absolute;
+  margin-top: 15%;
+  }
+  .borderdownarrow {
+    margin-left: 5px;
+    position:absolute;
+    margin-top: 15%;
+
+
+
+  }
