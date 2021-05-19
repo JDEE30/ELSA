@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
-
+import { BrowserRouter, Route, {Link } from 'react-router-dom'
+import { Link } from 'react-router';
 /*
 import M from 'materialize-css';
 import { HashLink } from 'react-router-hash-link';
@@ -21,7 +22,11 @@ class Nav extends Component {   */
               <h1 className="font-effect-shadow-multiple">Elsa</h1>
               <p className="font-effect-shadow-multiple">The app for finding your next fur baby!</p>
               <div></div>
-              <button className="buttons">Register</button>      <button className="buttons">Login</button>
+         
+                
+ 
+              
+                  <button className="buttons">Login</button>
               <div></div> 
         
         

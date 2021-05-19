@@ -21,7 +21,7 @@ class Nav extends Component {   */
   <Container>
   <Row className="petRows">
     <Col></Col>
-    <Col><h1>All kinds of pets up for rehoming in your area!</h1></Col>
+    <Col><h1>With Elsa, you can find all kinds of different pets.</h1></Col>
     <Col></Col>
 
   </Row>
