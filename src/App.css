@@ -27,15 +27,7 @@ background-color: rgb(228, 167, 77);
 
 }
 
-.downArrow {
-  padding-top: 10px;
-  background-color:rgb(228, 167, 77);
-  animation-name: example;
-  animation-duration: 5s;
-  animation-delay: 2s;
-  animation-iteration-count: 50;
 
-}
 
 @keyframes example {
   from {background-color: rgb(228, 167, 77);}
@@ -121,11 +113,20 @@ color: antiquewhite;
   position:absolute;
   margin-top: 15%;
   }
+
   .borderdownarrow {
     margin-left: 5px;
     position:absolute;
     margin-top: 15%;
+  }
 
+  .petRows {
 
+    padding-top: 3.5%;
 
+  }
+
+   .petCols:hover {
+    margin-top: -.5%;
+    animation-duration: 5ms;
   }

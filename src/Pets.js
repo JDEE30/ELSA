@@ -28,7 +28,7 @@ class Nav extends Component {   */
     <Col><p>Elsa allows you to find pets in your area with or with out rehoming fees.</p>
 </Col>
     <Col></Col>
-<Col><img src="./assets/doggy.jpg"width="200px" height="200px"></img></Col>
+<Col className="petCols"><img src="./assets/doggy.jpg"width="200px" height="200px"></img></Col>
 
   </Row>
   <Row>

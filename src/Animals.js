@@ -19,27 +19,27 @@ class Nav extends Component {   */
   <img className="borderdownarrow" src="./assets/dropshadowarrowwhite.svg"width="100px" height="50%" />
   </a>
   <Container>
-  <Row>
+  <Row className="petRows">
     <Col></Col>
     <Col><h1>All kinds of pets up for rehoming in your area!</h1></Col>
     <Col></Col>
 
   </Row>
+  
   <Row>
  
-    <Col><img src="./assets/bunny.jpg"width="150px" height="150px"></img></Col>
+    <Col className="petCols"><img src="./assets/bunny.jpg"width="150px" height="150px"></img></Col>
     <Col></Col>
 
-    <Col>  <img src="./assets/elsa1.png"width="150px" height="150px"></img>  </Col>
+    <Col className="petCols">  <img src="./assets/elsa1.png"width="150px" height="150px"></img>  </Col>
   </Row>
 
 
-  <Row>
- 
-    <Col><img src="./assets/kitty.jpg"width="150px" height="150px"></img></Col>
+  <Row className="petRows">
+      <Col className="petCols"><img src="./assets/kitty.jpg"width="150px" height="150px"></img></Col>
     <Col></Col>
 
-    <Col>  <img src="./assets/piggy.jpg"width="150px" height="150px"></img>  </Col>
+    <Col className="petCols">  <img src="./assets/piggy.jpg"width="150px" height="150px"></img>  </Col>
   </Row>
 </Container> 
 
