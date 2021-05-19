@@ -22,8 +22,9 @@ class Nav extends Component {   */
               <h1 className="font-effect-shadow-multiple">Elsa</h1>
               <p className="font-effect-shadow-multiple">The app for finding your next fur baby!</p>
               <div></div>
-         
-                
+ 
+  
+  
  
               
                   <button className="buttons">Login</button>

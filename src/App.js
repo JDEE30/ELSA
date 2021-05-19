@@ -3,7 +3,7 @@ import { Route, Switch } from "react-router-dom";
 import "./App.css";
 
 // Main pages
-import Banner from './Banner';
+import Banner from './Home';
 import Pets from './Pets';
 import Animals from './Animals';
 
@@ -11,8 +11,7 @@ function App() {
   return (
     <div className="app">
       <Switch>
-        <Route exact path="/" component={Home} />
-        <Route exact path="/banner" component={Banner} />
+             <Route exact path="/" component={Banner} />
         <Route exact path="/pets" component={Pets} />
         <Route exact path="/animals" component={Animals} />
       </Switch>
