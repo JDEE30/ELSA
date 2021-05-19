@@ -2,12 +2,13 @@ import React, { Component } from 'react';
 import './App.css';
 import { BrowserRouter, Route, Link } from 'react-router-dom';
 
+
 /*
 import M from 'materialize-css';
 import { HashLink } from 'react-router-hash-link';
 class Nav extends Component {   */
     
-    class Register extends Component {
+    class Login extends Component {
         render() {
 
             return (
@@ -16,13 +17,14 @@ class Nav extends Component {   */
         
         <div class="bannermargin">
         
-    <h1>Register</h1>
+    <h1>Login</h1>
 
-    <p> a lil more sh</p>
+    <p>umm login?</p>
     </div> </div>
       
       );
 }
 }
 
-export default Register; 
+
+export default Login; 

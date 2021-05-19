@@ -11,9 +11,9 @@ class Nav extends Component {   */
         render() {
 
             return (
-<div><a href = "#pets">
+<div><Link to = "/pets">
   <img className="borderdownarrow" src="./assets/dropshadowarrowwhite.svg"width="100px" height="60%" />
-  </a> <div className="banner">
+  </Link> <div className="banner">
         
         <div class="bannermargin">
         
@@ -22,12 +22,18 @@ class Nav extends Component {   */
               <h1 className="font-effect-shadow-multiple">Elsa</h1>
               <p className="font-effect-shadow-multiple">The app for finding your next fur baby!</p>
               <div></div>
- 
-  
-  
- 
-              
-                  <button className="buttons">Login</button>
+       
+                  <Link to="/register">
+     <button className="buttons">
+          Register
+     </button>
+ </Link>
+
+ <Link to="/Login">
+     <button className="buttons">
+          Login
+     </button>
+ </Link>
               <div></div> 
         
         

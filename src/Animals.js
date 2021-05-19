@@ -4,6 +4,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import { BrowserRouter, Route, Link } from 'react-router-dom';
+
 /*
 import M from 'materialize-css';
 import { HashLink } from 'react-router-hash-link';
@@ -15,9 +17,9 @@ class Nav extends Component {   */
             return (
 <div id="animals">
   <div className="animals">
-  <a href = "#pets">
+  <Link to = "/">
   <img className="borderdownarrow" src="./assets/dropshadowarrowwhite.svg"width="100px" height="50%" />
-  </a>
+  </Link>
   <Container>
   <Row className="petRows">
     <Col></Col>
