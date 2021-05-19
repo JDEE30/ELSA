@@ -3,7 +3,7 @@ import { Route, Switch } from "react-router-dom";
 import "./App.css";
 
 // Main pages
-import Banner from './Home';
+import Banner from './Banner';
 import Pets from './Pets';
 import Animals from './Animals';
 
