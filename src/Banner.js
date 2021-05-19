@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
-import { BrowserRouter, Route, {Link } from 'react-router-dom'
-import { Link } from 'react-router';
+import { BrowserRouter, Route, Link } from 'react-router-dom';
+
 /*
 import M from 'materialize-css';
 import { HashLink } from 'react-router-hash-link';
