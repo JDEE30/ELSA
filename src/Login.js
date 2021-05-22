@@ -1,6 +1,7 @@
-import React, { Component } from 'react';
+import {React, useState, Component } from 'react';
 import './App.css';
 import { BrowserRouter, Route, Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 
 
 /*
@@ -8,24 +9,45 @@ import M from 'materialize-css';
 import { HashLink } from 'react-router-hash-link';
 class Nav extends Component {   */
     
-    class Login extends Component {
-        render() {
-
-            return (
+  async function loginUser(credentials) {
+    return fetch('http://localhost:8080/login', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(credentials)
+    })
+      .then(data => data.json())
+   }
+   
+   export default function Login({ setToken }) {
+     const [username, setUserName] = useState();
+     const [password, setPassword] = useState();
+   
+     const handleSubmit = async e => {
+       e.preventDefault();
+       const token = await loginUser({
+         username,
+         password
+       });
+       setToken(token);
+     }
+   
+     return(
 
 <div className="banner">
         
         <div class="bannermargin">
         
-    <h1>Login</h1>
-    <form>
+    <h1>Register & Login</h1>
+    <form onSubmit={handleSubmit}>
       <label>
         <p>Username</p>
-        <input type="text" />
+        <input type="text" onChange={e => setUserName(e.target.value)}/>
       </label>
       <label>
         <p>Password</p>
-        <input type="password" />
+        <input type="password" onChange={e => setPassword(e.target.value)}/>
       </label>
       <div>
         <button type="submit">Submit</button>
@@ -35,7 +57,6 @@ class Nav extends Component {   */
       
       );
 }
+Login.propTypes = {
+  setToken: PropTypes.func.isRequired
 }
-
-
-export default Login; 

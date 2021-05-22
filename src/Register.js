@@ -18,7 +18,7 @@ class Nav extends Component {   */
         
     <h1>Register</h1>
 
-    <p> a lil more sh</p>
+    <p>no Registration currently required, just login via the login page, if you have not already.</p>
     </div> </div>
       
       );

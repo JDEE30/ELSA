@@ -7,7 +7,7 @@ import M from 'materialize-css';
 import { HashLink } from 'react-router-hash-link';
 class Nav extends Component {   */
     
-    class Banner extends Component {
+    class AdoptCats extends Component {
         render() {
 
             return (
@@ -16,18 +16,12 @@ class Nav extends Component {   */
   </Link> <div className="banner">
         
         <div class="bannermargin">
-        
+        <h1 className="font-effect-shadow-multiple">Wonderful!</h1>
+
         <img src= "./assets/elsa1.jpg" width="250px" height="250px"  />
         
-              <h1 className="font-effect-shadow-multiple">Elsa</h1>
-              <p className="font-effect-shadow-multiple">The app for finding your next fur baby!</p>
+              <p className="font-effect-shadow-multiple">Please take a look at our selection of Cats near you.</p>
               <div></div>
-       
-                  <Link to="/GetStarted">
-     <button className="buttons">
-          Get Started
-     </button>
- </Link>
 
    <div></div> 
         
@@ -39,4 +33,4 @@ class Nav extends Component {   */
 }
 }
 
-export default Banner; 
+export default AdoptCats; 

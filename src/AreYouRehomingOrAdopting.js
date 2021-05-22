@@ -7,25 +7,30 @@ import M from 'materialize-css';
 import { HashLink } from 'react-router-hash-link';
 class Nav extends Component {   */
     
-    class Banner extends Component {
+    class AreYouBuyingOrSelling extends Component {
         render() {
 
             return (
-<div><Link to = "/pets">
-  <img className="borderdownarrow" src="./assets/dropshadowarrowwhite.svg"width="100px" height="60%" />
-  </Link> <div className="banner">
+<div> <div className="banner">
         
         <div class="bannermargin">
-        
+        <h1 className="font-effect-shadow-multiple">Are you a adopting a new pet(s) or rehoming current pet(s)</h1>
+
         <img src= "./assets/elsa1.jpg" width="250px" height="250px"  />
         
-              <h1 className="font-effect-shadow-multiple">Elsa</h1>
-              <p className="font-effect-shadow-multiple">The app for finding your next fur baby!</p>
+              <p className="font-effect-shadow-multiple">Are you planning to Rehome your Pet or Adopt a new one?</p>
               <div></div>
        
-                  <Link to="/GetStarted">
+                  <Link to="/Adopt">
      <button className="buttons">
-          Get Started
+          Adopt
+     </button>
+ </Link>
+
+
+ <Link to="/Rehome">
+     <button className="buttons">
+          Rehome
      </button>
  </Link>
 
@@ -39,4 +44,4 @@ class Nav extends Component {   */
 }
 }
 
-export default Banner; 
+export default AreYouBuyingOrSelling; 
