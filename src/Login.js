@@ -26,9 +26,11 @@ class Nav extends Component {   */
    
      const handleSubmit = async e => {
        e.preventDefault();
+       
        const token = await loginUser({
          username,
-         password
+         password,
+         
        });
        setToken(token);
      }
@@ -38,21 +40,24 @@ class Nav extends Component {   */
 <div className="banner">
         
         <div class="bannermargin">
+        <img src= "./assets/elsa1.jpg" width="250px" height="250px"  />
+        <h1 className="font-effect-shadow-multiple">Register & Login</h1>
         
-    <h1>Register & Login</h1>
     <form onSubmit={handleSubmit}>
       <label>
-        <p>Username</p>
-        <input type="text" onChange={e => setUserName(e.target.value)}/>
+        <p className="font-effect-shadow-multiple">Username</p>
+        <input type="text" class="buttons" onChange={e => setUserName(e.target.value)}/>
       </label>
       <label>
-        <p>Password</p>
-        <input type="password" onChange={e => setPassword(e.target.value)}/>
+        <p className="font-effect-shadow-multiple">Password</p>
+        <input type="password" class="buttons" onChange={e => setPassword(e.target.value)}/>
       </label>
       <div>
-        <button type="submit">Submit</button>
+        <button class="buttons" type="submit">Submit</button>
       </div>
     </form>
+
+    
     </div> </div>
       
       );
